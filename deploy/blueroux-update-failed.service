@@ -1,0 +1,9 @@
+[Unit]
+Description=Alert that the Blue Roux site update failed
+
+[Service]
+Type=oneshot
+# .env must be plain KEY=value lines (no quotes, no "export") so systemd can read it too.
+EnvironmentFile=-@REPO@/.env
+WorkingDirectory=@REPO@/scripts
+ExecStart=@REPO@/.venv/bin/python notify.py "The scheduled update on the home server failed. Run: journalctl --user -u blueroux-update. The site keeps showing the last good build."

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.title }}{% endblock %}</title>
+<meta name="description" content="{{ site.tagline }}">
+{% block robots %}{% endblock %}
+<link rel="icon" href="{{ base }}/static/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="{{ base }}/static/css/site.css?v={{ v }}">
+<script>
+  // apply saved theme before paint to avoid a flash
+  try { var t = localStorage.getItem('br-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="masthead">
+  <a class="brand" href="{{ base }}/">
+    <img class="spin-slow" src="{{ base }}/static/img/record.svg" alt="" width="44" height="44">
+    <span class="brand-text"><b>{{ site.title }}</b><small>{{ site.tagline }}</small></span>
+  </a>
+  <nav class="topnav" aria-label="Main">
+    <a href="{{ base }}/">Albums</a>
+    <a href="{{ base }}/radio/">Radio</a>
+    {% for p in nav_pages %}<a href="{{ base }}/{{ p.slug }}/">{{ p.title }}</a>{% endfor %}
+  </nav>
+  <label class="theme-pick">Theme
+    <select id="theme-select" aria-label="Color theme">
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+      <option value="ereader">E-reader</option>
+    </select>
+  </label>
+</header>
+<div class="stripe" aria-hidden="true"></div>
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+<footer class="foot">
+  <img src="{{ base }}/static/img/cassette.svg" alt="" width="36" height="24">
+  <span>Updated {{ updated }} · data from Discogs, YouTube, Mixcloud &amp; Spinitron · a fan site, not affiliated with any of them</span>
+  <img src="{{ base }}/static/img/cd.svg" alt="" width="24" height="24">
+</footer>
+<script src="{{ base }}/static/js/theme.js?v={{ v }}"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Manual video -> Discogs release links. These take priority over every automatic match.
+# The release doesn't have to be in BlueRoux's collection (it's fetched on the next update).
+#
+#   "<youtube video id>": <discogs release id>
+#   "<youtube video id>": null      hide the video (not an album: announcements, shorts, …)
+#
+# Videos with no match and no line here appear on the site as "No Discogs page".
+# ALWAYS put the video id in double quotes: an id starting with "-" breaks the file otherwise.
+# /status/unmatched.html prints ready-to-paste lines.
+#
+# "dQw4w9WgXcQ": 1234567
+# "-abcDEF1234": null

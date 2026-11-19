@@ -1,0 +1,617 @@
+{
+ "shows": {
+  "2026-11-01": {
+   "date": "2026-11-01",
+   "mixcloud": {
+    "created": "2026-11-01T19:35:57Z",
+    "key": "/tropicofm/gunk-in-the-groove-11-1-26/",
+    "name": "Gunk In The Groove 11-1-26",
+    "picture": "https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/e/3/f/2/3b0e-9da5-4277-bacf-8139dffacaf0",
+    "tags": [],
+    "url": "https://www.mixcloud.com/tropicofm/gunk-in-the-groove-11-1-26/"
+   },
+   "spinitron": {
+    "other_urls": [
+     "https://spinitron.com/Tropico/pl/23271314/Gunk-In-The-Groove-11-1-26"
+    ],
+    "spins": [
+     {
+      "artist": "Cal Tjader Quintet",
+      "label": "DCC Compact Classics, Inc.",
+      "release": "Solar Heat",
+      "song": "Spooky",
+      "time": "10:11 AM",
+      "year": "2007"
+     },
+     {
+      "artist": "The Afro Blues Quintet Plus One",
+      "label": "Essential Media Group",
+      "release": "Hits Anthology",
+      "song": "Mystic Mambo",
+      "time": "10:15 AM",
+      "year": "2010"
+     },
+     {
+      "artist": "Mongo Santamaria",
+      "label": "Fania",
+      "release": "Live At Yankee Stadium",
+      "song": "Coyulde",
+      "time": "10:19 AM",
+      "year": "2019"
+     },
+     {
+      "artist": "Abraham Rodriguez Jr./Avishai Cohen",
+      "label": "naïve, a label of Believe Group",
+      "release": "Iroko",
+      "song": "It's A Man's World",
+      "time": "10:24 AM",
+      "year": "2023"
+     },
+     {
+      "artist": "The Crusaders",
+      "label": "Verve Reissues",
+      "release": "Free As The Wind",
+      "song": "I Felt The Love",
+      "time": "10:32 AM",
+      "year": "1995"
+     },
+     {
+      "artist": "Sunbear",
+      "label": "UNIDISC MUSIC INC.",
+      "release": "Sunbear",
+      "song": "So Long",
+      "time": "10:37 AM",
+      "year": "1977"
+     },
+     {
+      "artist": "Riot",
+      "label": "Verve",
+      "release": "Welcome To The World Of Riot",
+      "song": "Put Your Gun Down Brother",
+      "time": "10:43 AM",
+      "year": "1977"
+     },
+     {
+      "artist": "Afrique",
+      "label": "Mainstream Records",
+      "release": "Soul Makossa",
+      "song": "Kissing My Love",
+      "time": "10:47 AM",
+      "year": "1973"
+     },
+     {
+      "artist": "The Trinikas",
+      "label": "Révérence",
+      "release": "Soul Freedom: The Best Of Jazzman 45s 11-20",
+      "song": "Remember Me",
+      "time": "10:48 AM",
+      "year": "2013"
+     },
+     {
+      "artist": "The Mighty Imperials",
+      "label": "Daptone Records",
+      "release": "Thunder Chicken",
+      "song": "Jody's Walk",
+      "time": "10:50 AM",
+      "year": "2019"
+     },
+     {
+      "artist": "Pastor T.L. Barrett and the Youth for Christ Choir",
+      "label": "Numero Group",
+      "release": "Do Not Pass Me By Vol. I",
+      "song": "Father I Stretch My Hands",
+      "time": "10:55 AM",
+      "year": "1976"
+     },
+     {
+      "artist": "The Robert Patterson Singers",
+      "label": "",
+      "release": "",
+      "song": "Give Him A Chance",
+      "time": "11:04 AM",
+      "year": ""
+     },
+     {
+      "artist": "The Gospel Travelers",
+      "label": "Bible & Tire Recording Co.",
+      "release": "The D-Vine Spirituals Story, Vol. 3",
+      "song": "Victory",
+      "time": "11:05 AM",
+      "year": "2023"
+     },
+     {
+      "artist": "Pat Thomas",
+      "label": "Mr Bongo",
+      "release": "Pat Thomas Introduces Marijata",
+      "song": "Salvation",
+      "time": "11:14 AM",
+      "year": "1976"
+     },
+     {
+      "artist": "Sven Wunder",
+      "label": "Piano Piano",
+      "release": "Easy Going",
+      "song": "Easy Going",
+      "time": "11:22 AM",
+      "year": "2023"
+     },
+     {
+      "artist": "Dizzy K.",
+      "label": "Sticky Buttons",
+      "release": "Sweet Music, Vol. 1",
+      "song": "Omoge",
+      "time": "11:26 AM",
+      "year": "2018"
+     },
+     {
+      "artist": "Donald Byrd",
+      "label": "EMI HOLLAND",
+      "release": "Stepping Into Tomorrow",
+      "song": "Think Twice",
+      "time": "11:30 AM",
+      "year": "2007"
+     },
+     {
+      "artist": "Fania All Stars",
+      "label": "Sony Music Latin",
+      "release": "Spanish Fever",
+      "song": "Que Pasa?",
+      "time": "11:36 AM",
+      "year": "2009"
+     },
+     {
+      "artist": "Roberto Roena",
+      "label": "Fania",
+      "release": "El Progreso",
+      "song": "Guaguanco Del Adios",
+      "time": "11:44 AM",
+      "year": "2019"
+     },
+     {
+      "artist": "L'Ensemble Abricot",
+      "label": "Soundway Records",
+      "release": "Soundway presents Tumbélé! (Biguine, Afro & Latin Sounds from the French Caribbean, 1963-74)",
+      "song": "Chonga",
+      "time": "11:50 AM",
+      "year": "2011"
+     },
+     {
+      "artist": "Quantic",
+      "label": "Tru Thoughts",
+      "release": "Almas Conectadas",
+      "song": "El Avión",
+      "time": "11:55 AM",
+      "year": "2021"
+     }
+    ],
+    "url": "https://spinitron.com/Tropico/pl/23271348/Gunk-in-the-Groove"
+   }
+  },
+  "2026-11-08": {
+   "date": "2026-11-08",
+   "mixcloud": {
+    "created": "2026-11-08T19:27:02Z",
+    "key": "/tropicofm/gunk-in-the-groove-11-8-26/",
+    "name": "Gunk In The Groove 11-8-26",
+    "picture": "https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/8/9/3/9/411d-a896-413c-9b0e-7cf2a31ae714",
+    "tags": [],
+    "url": "https://www.mixcloud.com/tropicofm/gunk-in-the-groove-11-8-26/"
+   },
+   "spinitron": {
+    "other_urls": [],
+    "spins": [
+     {
+      "artist": "Irene Kral",
+      "label": "Vee-Jay Records",
+      "release": "Kral Space",
+      "song": "It's Nice Weather For Ducks",
+      "time": "10:04 AM",
+      "year": "1977"
+     },
+     {
+      "artist": "Lyall McGregor",
+      "label": "",
+      "release": "",
+      "song": "Take Five",
+      "time": "10:07 AM",
+      "year": ""
+     },
+     {
+      "artist": "Arnie Carruthers & Joe Kloess",
+      "label": "",
+      "release": "",
+      "song": "Muito A Vontade",
+      "time": "10:11 AM",
+      "year": ""
+     },
+     {
+      "artist": "Flora Purim",
+      "label": "Original Jazz Classics",
+      "release": "Open Your Eyes You Can Fly",
+      "song": "Time's Lie",
+      "time": "10:15 AM",
+      "year": "1976"
+     },
+     {
+      "artist": "Jane Fair Jazz Quintet",
+      "label": "",
+      "release": "",
+      "song": "Guidone",
+      "time": "10:23 AM",
+      "year": ""
+     },
+     {
+      "artist": "Milt Jackson",
+      "label": "Epic/Associated/Legacy",
+      "release": "Sunflower",
+      "song": "People Make the World Go Round",
+      "time": "10:25 AM",
+      "year": "1972"
+     },
+     {
+      "artist": "The O'Neal Twins and the Interfaith Choir",
+      "label": "",
+      "release": "",
+      "song": "Jesus Dropped The Charges",
+      "time": "10:42 AM",
+      "year": ""
+     },
+     {
+      "artist": "The Georgia Mass Choir",
+      "label": "Savoy Records",
+      "release": "Yes, He Can",
+      "song": "Bye and Bye",
+      "time": "10:44 AM",
+      "year": "1983"
+     },
+     {
+      "artist": "The Mighty Pearly Gates",
+      "label": "",
+      "release": "",
+      "song": "God Is My Friend",
+      "time": "10:49 AM",
+      "year": ""
+     },
+     {
+      "artist": "Candle",
+      "label": "",
+      "release": "",
+      "song": "Call On Him",
+      "time": "10:55 AM",
+      "year": ""
+     },
+     {
+      "artist": "Paul Johnson And The Sure Foundation",
+      "label": "",
+      "release": "",
+      "song": "There's More",
+      "time": "10:55 AM",
+      "year": ""
+     },
+     {
+      "artist": "Northbound",
+      "label": "",
+      "release": "",
+      "song": "Livin' In The Light",
+      "time": "10:58 AM",
+      "year": ""
+     },
+     {
+      "artist": "Hear And Now",
+      "label": "",
+      "release": "",
+      "song": "Classical Gas",
+      "time": "11:09 AM",
+      "year": ""
+     },
+     {
+      "artist": "The Doors",
+      "label": "Rhino/Elektra",
+      "release": "Morrison Hotel",
+      "song": "Peace Frog",
+      "time": "11:11 AM",
+      "year": "2012"
+     },
+     {
+      "artist": "The Match",
+      "label": "RCA/Legacy",
+      "release": "A New Light",
+      "song": "Where Do I Go? (from the Musical \"Hair\")",
+      "time": "11:13 AM",
+      "year": "1969"
+     },
+     {
+      "artist": "The Fireballs",
+      "label": "Ace Records",
+      "release": "Bottle of Wine / Come on, React!",
+      "song": "Get out of My Life, Woman",
+      "time": "11:15 AM",
+      "year": "1998"
+     },
+     {
+      "artist": "Blue Mink",
+      "label": "Trojan Records",
+      "release": "Good Morning Freedom: The Anthology",
+      "song": "Gidda Wadda Wobbie",
+      "time": "11:18 AM",
+      "year": "2002"
+     },
+     {
+      "artist": "Eric Westphal",
+      "label": "",
+      "release": "",
+      "song": "Alone",
+      "time": "11:22 AM",
+      "year": ""
+     },
+     {
+      "artist": "James Brown",
+      "label": "Universal Records",
+      "release": "Reality",
+      "song": "Funky President (People It's Bad)",
+      "time": "11:31 AM",
+      "year": "1974"
+     },
+     {
+      "artist": "Willie Henderson and The Soul Explosions",
+      "label": "Brunswick Record Corp.",
+      "release": "Funky Chicken",
+      "song": "Loose Booty (Bonus Track)",
+      "time": "11:37 AM",
+      "year": "1968"
+     },
+     {
+      "artist": "Don Julian & The Larks",
+      "label": "Money Records",
+      "release": "Super Slick",
+      "song": "Shorty the Pimp",
+      "time": "11:37 AM",
+      "year": "1974"
+     },
+     {
+      "artist": "George Duke",
+      "label": "Epic/Legacy",
+      "release": "Don't Let Go (Expanded Edition)",
+      "song": "Morning Sun",
+      "time": "11:40 AM",
+      "year": "1978"
+     },
+     {
+      "artist": "Beastie Boys",
+      "label": "Capitol Records",
+      "release": "Check Your Head",
+      "song": "In 3's",
+      "time": "11:46 AM",
+      "year": "1992"
+     },
+     {
+      "artist": "Ebo Taylor",
+      "label": "Mr Bongo",
+      "release": "My Love and Music",
+      "song": "Maye Omama",
+      "time": "11:52 AM",
+      "year": "1975"
+     }
+    ],
+    "url": "https://spinitron.com/Tropico/pl/23308393/Gunk-in-the-Groove"
+   }
+  },
+  "2026-11-15": {
+   "date": "2026-11-15",
+   "mixcloud": {
+    "created": "2026-11-15T19:09:49Z",
+    "key": "/tropicofm/gunk-in-the-groove-111526/",
+    "name": "Gunk In The Groove 11.15.26",
+    "picture": "https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/7/e/d/d/1572-76ac-40ca-8e26-05d004301bfb",
+    "tags": [],
+    "url": "https://www.mixcloud.com/tropicofm/gunk-in-the-groove-111526/"
+   },
+   "spinitron": {
+    "other_urls": [],
+    "spins": [
+     {
+      "artist": "Black Masters Band",
+      "label": "Analog Africa",
+      "release": "Essiebons Special 1973 - 1984 // Ghana Music Power House [Analog Africa No. 33]",
+      "song": "Wonnin a Bisa",
+      "time": "10:02 AM",
+      "year": "2021"
+     },
+     {
+      "artist": "Scrapview's Band",
+      "label": "",
+      "release": "",
+      "song": "Asomaniwa",
+      "time": "10:10 AM",
+      "year": ""
+     },
+     {
+      "artist": "Carlos Lamartine",
+      "label": "",
+      "release": "",
+      "song": "Bazooka",
+      "time": "10:13 AM",
+      "year": ""
+     },
+     {
+      "artist": "Roland Brival",
+      "label": "iMD-Roland Brival",
+      "release": "Créole Gypsy",
+      "song": "ABCD",
+      "time": "10:15 AM",
+      "year": "1980"
+     },
+     {
+      "artist": "Dimba Diangola",
+      "label": "Analog Africa",
+      "release": "Angola, Soundtrack 2: Hypnosis, Distortions & Other Sonic Innovations 1969-1978 (Analog Africa No. 15)",
+      "song": "Despedida",
+      "time": "10:19 AM",
+      "year": "2013"
+     },
+     {
+      "artist": "Charlie's Roots",
+      "label": "",
+      "release": "",
+      "song": "Jourvert Man",
+      "time": "10:26 AM",
+      "year": ""
+     },
+     {
+      "artist": "G.R.E.S. Estácio de Sá",
+      "label": "EstácioDeSá",
+      "release": "Os Sambas da Estácio",
+      "song": "Deixa Falar ('80)",
+      "time": "10:35 AM",
+      "year": "2014"
+     },
+     {
+      "artist": "OS CARETAS",
+      "label": "",
+      "release": "",
+      "song": "Valongo",
+      "time": "10:40 AM",
+      "year": ""
+     },
+     {
+      "artist": "Airto Moreira",
+      "label": "BBE Music",
+      "release": "Airto & Flora - A Celebration: 60 Years - Sounds, Dreams & Other Stories",
+      "song": "Andei",
+      "time": "10:44 AM",
+      "year": "2023"
+     },
+     {
+      "artist": "Jorge Ben Jor",
+      "label": "Universal Music Ltda.",
+      "release": "A Tabua De Esmeralda",
+      "song": "Errare Humanum Est",
+      "time": "10:45 AM",
+      "year": "2008"
+     },
+     {
+      "artist": "Sergio Mendes & Brasil '77",
+      "label": "Concord Records",
+      "release": "Primal Roots",
+      "song": "Canto De Ubiratan",
+      "time": "10:53 AM",
+      "year": "2020"
+     },
+     {
+      "artist": "Agustín Arce",
+      "label": "Fiesta Caribeña",
+      "release": "Oigan Mi Son",
+      "song": "Si Echa Pa´Lante",
+      "time": "10:59 AM",
+      "year": "2021"
+     },
+     {
+      "artist": "Tille Y Su Nueva Dimension",
+      "label": "",
+      "release": "",
+      "song": "Maladad, Mentira, y Falsedad",
+      "time": "11:06 AM",
+      "year": ""
+     },
+     {
+      "artist": "Los Orientales de Paramonga",
+      "label": "Analog Africa",
+      "release": "Los Orientales de Paramonga 1972-1976 (Analog Africa No.45)",
+      "song": "Mi Guajira Te Llama",
+      "time": "11:08 AM",
+      "year": "2026"
+     },
+     {
+      "artist": "Poppy y sus Pirañas",
+      "label": "Discos MAG",
+      "release": "Quiero",
+      "song": "Como Baila Lucy",
+      "time": "11:10 AM",
+      "year": "1972"
+     },
+     {
+      "artist": "José Jiménez y su conjunto",
+      "label": "ANDES RECORDS, Una división de ABM RECORDS MUSIC GROUP Inc.",
+      "release": "Sonideros de Hidalgo",
+      "song": "Sobre las Olas",
+      "time": "11:12 AM",
+      "year": "2025"
+     },
+     {
+      "artist": "Carol Hahn",
+      "label": "",
+      "release": "",
+      "song": "Sorry",
+      "time": "11:22 AM",
+      "year": ""
+     },
+     {
+      "artist": "Richard Eriwata",
+      "label": "",
+      "release": "",
+      "song": "Does She Have A Friend For Me?",
+      "time": "11:23 AM",
+      "year": ""
+     },
+     {
+      "artist": "Sirani Avedis",
+      "label": "",
+      "release": "",
+      "song": "Clear The Sky",
+      "time": "11:27 AM",
+      "year": ""
+     },
+     {
+      "artist": "Ephraim",
+      "label": "",
+      "release": "",
+      "song": "Night Life",
+      "time": "11:30 AM",
+      "year": ""
+     },
+     {
+      "artist": "Solomon Kane",
+      "label": "",
+      "release": "",
+      "song": "Fox Hunt",
+      "time": "11:34 AM",
+      "year": ""
+     },
+     {
+      "artist": "Arnold McCuller",
+      "label": "A&M",
+      "release": "The Warriors Original Motion Picture Soundtrack",
+      "song": "Nowhere To Run - From \"The Warriors\" Soundtrack",
+      "time": "11:37 AM",
+      "year": "2005"
+     },
+     {
+      "artist": "Toto",
+      "label": "SONY BMG Catalog",
+      "release": "Toto",
+      "song": "Georgy Porgy",
+      "time": "11:47 AM",
+      "year": "2007"
+     },
+     {
+      "artist": "John Beltran",
+      "label": "MotorCity Wine Recordings.",
+      "release": "Back To Bahia",
+      "song": "Entardecer",
+      "time": "11:51 AM",
+      "year": "2020"
+     },
+     {
+      "artist": "Splendor",
+      "label": "SME",
+      "release": "Splendor",
+      "song": "Sunny Side Up",
+      "time": "11:56 AM",
+      "year": "2017"
+     }
+    ],
+    "url": "https://spinitron.com/Tropico/pl/23346087/Gunk-in-the-Groove"
+   }
+  }
+ }
+}

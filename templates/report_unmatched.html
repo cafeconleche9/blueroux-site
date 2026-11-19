@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}No Discogs match – {{ site.title }}{% endblock %}
+{% block robots %}<meta name="robots" content="noindex,nofollow">{% endblock %}
+{% block content %}
+<div class="prose wide">
+  <p><a href="{{ base }}/status/">← Status</a></p>
+  <h1>Videos with no Discogs match ({{ rows|length }})</h1>
+  <p class="muted">These appear on the site as <b>"No Discogs page"</b>. Each is searched on Discogs automatically and linked
+    when the Discogs page lists this exact video, or when the artist and title clearly agree. If one really does have a Discogs page, paste its line
+    into <code>overrides/matches.yaml</code> (any release works, even one that isn't in BlueRoux's collection).
+    To hide a video that isn't an album (an announcement, a short), use <code>null</code>.</p>
+  {% for r in rows %}
+  <section class="report-item">
+    <h3><a href="{{ r.video.id|ytlink }}">{{ r.video.title }}</a></h3>
+    {% if r.search_candidates %}
+    <p class="muted">Discogs search results that didn't look like a match (not linked):</p>
+    <ul>
+      {% for c in r.search_candidates %}
+      <li><a href="https://www.discogs.com/release/{{ c.id }}">{{ c.title }}</a> <span class="muted">({{ c.year or '?' }}{% if c.format %}, {{ c.format }}{% endif %})</span><br>
+        <code>{{ r.video.id|yamlkey }}: {{ c.id }}</code></li>
+      {% endfor %}
+    </ul>
+    {% elif r.searched %}
+    <p class="muted">Searched Discogs on {{ r.searched }}: nothing found.</p>
+    {% endif %}
+    {% if r.candidates %}
+    <p class="muted">Possible matches in the collection:</p>
+    <ul>
+      {% for c in r.candidates %}
+      <li>{{ c.label }} <span class="muted">(score {{ c.score }})</span><br>
+        <code>{{ r.video.id|yamlkey }}: {{ c.release_id }}</code></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <p class="muted"><code>{{ r.video.id|yamlkey }}: &lt;discogs release id&gt;</code> · hide: <code>{{ r.video.id|yamlkey }}: null</code></p>
+  </section>
+  {% else %}<p>Every video matched a Discogs release 🎉</p>{% endfor %}
+</div>
+{% endblock %}

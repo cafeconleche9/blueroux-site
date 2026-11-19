@@ -1,0 +1,17 @@
+[Unit]
+Description=Publish blueroux.local on the local network (mDNS)
+After=network-online.target avahi-daemon.service
+Wants=network-online.target
+Requires=avahi-daemon.service
+
+[Service]
+# Installed to /usr/local/bin by setup-local.sh: the unprivileged service user can't read /home.
+ExecStart=/usr/local/bin/blueroux-mdns blueroux.local
+Restart=always
+RestartSec=5
+# Run as a normal user: under DynamicUser's sandbox avahi-publish fails with
+# "Failed to create client object: An unexpected D-Bus error occurred".
+User=@USER@
+
+[Install]
+WantedBy=multi-user.target

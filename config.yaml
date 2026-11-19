@@ -1,0 +1,30 @@
+# Blue Roux archive – site configuration
+site:
+  title: "Blue Roux Archive"
+  tagline: "forgotten music, found again"
+  base_url: ""          # "" = served at the site root (blueroux.local). The GitHub workflow sets SITE_BASE_URL
+                        # to "/<repo-name>" automatically, so leave this alone.
+
+youtube:
+  handle: "blueroux4776"   # channel @handle (no @)
+
+discogs:
+  username: "BlueRoux"    # BlueRoux's Discogs username (collection must be public)
+  user_agent: "BlueRouxArchive/0.1"   # Discogs asks apps to identify themselves; add " +<repo URL>" once it exists
+  min_interval_seconds: 1.1
+  # Max Discogs requests per update for finding uploads outside his collection (~2.4 per video).
+  # 2000 clears the initial backlog in one run (~35 min); later runs only search new/stale videos.
+  search_budget: 2000
+
+mixcloud:
+  user: "tropicofm"
+  # separators vary in practice: "11-8-26", "11.15.26", "11/17/26"
+  show_title_regex: '^Gunk In The Groove\s+(\d{1,2})[-/.](\d{1,2})[-/.](\d{2,4})\s*$'
+  first_show: "2026-11-01"
+
+spinitron:
+  dj_url: "https://spinitron.com/Tropico/dj/198366/BlueRoux"
+
+matching:
+  fuzzy_threshold: 88      # rapidfuzz score (0-100) needed to auto-accept a title match
+  review_threshold: 70     # below accept, above this -> listed with candidates in the unmatched report

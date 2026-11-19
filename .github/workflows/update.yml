@@ -1,0 +1,92 @@
+name: Update site
+
+# Two stages, controlled by the repo variable DEPLOY_PAGES (Settings → Secrets and variables →
+# Actions → Variables):
+#   not set / anything but "true"  → test stage: build the site and attach it to the run as a
+#                                    downloadable "site" artifact (works in a private repo).
+#   "true"                         → live stage: publish to GitHub Pages (needs a public repo, or a
+#                                    paid plan, and Settings → Pages → Source = GitHub Actions).
+
+on:
+  schedule:
+    - cron: "17 9 * * *"     # daily, 09:17 UTC (covers the Sunday radio show within a day)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ["data/cache/**"]
+
+permissions:
+  contents: write            # commit refreshed data/cache
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site-update
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Fetch data and build site
+        working-directory: scripts
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          # Pages serves the site at https://<user>.github.io/<repo-name>/
+          SITE_BASE_URL: /${{ github.event.repository.name }}
+        run: python run_all.py
+
+      # Commit the cache even if a later step fails, so a long backfill makes progress.
+      - name: Commit refreshed cache
+        if: always()
+        run: |
+          git config user.name  "blueroux-site bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cache
+          git diff --cached --quiet || (git commit -m "Update cached data [skip ci]" && git pull --rebase && git push)
+
+      # Test stage: the built site, downloadable from the run's summary page.
+      - name: Attach built site to the run
+        if: vars.DEPLOY_PAGES != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: dist
+          retention-days: 7
+
+      # Live stage
+      - if: vars.DEPLOY_PAGES == 'true'
+        uses: actions/configure-pages@v5
+      - if: vars.DEPLOY_PAGES == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Alert Discord on failure
+        if: failure()
+        working-directory: scripts
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python notify.py "A step failed before the site could be published. The live site keeps showing the last good build."
+
+  deploy:
+    needs: build
+    if: vars.DEPLOY_PAGES == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

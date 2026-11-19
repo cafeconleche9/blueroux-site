@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily Blue Roux site update
+
+[Timer]
+OnCalendar=*-*-* 06:00:00
+# If the computer was off at 06:00, run as soon as it's back on.
+Persistent=true
+
+[Install]
+WantedBy=timers.target

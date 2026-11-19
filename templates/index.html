@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="browse" id="browse" data-base="{{ base }}" data-json="{{ base }}/albums.json">
+  <button class="btn filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filters">☰ Filters <span id="filter-badge" class="badge" hidden></span></button>
+
+  <aside class="filters" id="filters" aria-label="Filters">
+    <div class="filters-head">
+      <b>Filters</b>
+      <button class="btn small" id="clear-filters" type="button">Clear all</button>
+      <button class="btn small close-filters" id="filters-close" type="button" aria-label="Close filters">✕</button>
+    </div>
+    <label class="search-box">Search
+      <input type="search" id="q" placeholder="artist, album, label…" autocomplete="off">
+    </label>
+    <fieldset class="range">
+      <legend>Year released</legend>
+      <input type="number" id="year-min" placeholder="from" inputmode="numeric" aria-label="Released from year">
+      <span>–</span>
+      <input type="number" id="year-max" placeholder="to" inputmode="numeric" aria-label="Released to year">
+    </fieldset>
+    <fieldset class="range">
+      <legend>Added to collection</legend>
+      <input type="date" id="added-min" aria-label="Added from">
+      <span>–</span>
+      <input type="date" id="added-max" aria-label="Added to">
+    </fieldset>
+    <div id="facets"><p class="loading">Loading…</p></div>
+  </aside>
+
+  <section class="results" aria-live="polite">
+    <div class="toolbar">
+      <span id="result-count" class="count">…</span>
+      <label>Sort
+        <select id="sort">
+          <option value="uploaded:desc">Newest upload</option>
+          <option value="added:desc">Newest added to collection</option>
+          <option value="year:asc">Oldest release</option>
+          <option value="year:desc">Newest release</option>
+          <option value="artist:asc">Artist A–Z</option>
+          <option value="title:asc">Title A–Z</option>
+        </select>
+      </label>
+      <div class="view-toggle" role="group" aria-label="View">
+        <button class="btn" id="view-grid" aria-pressed="true">▦ Grid</button>
+        <button class="btn" id="view-list" aria-pressed="false">☰ List</button>
+      </div>
+      <details class="cols" id="cols-menu">
+        <summary class="btn">Columns</summary>
+        <div class="cols-pop" id="cols-pop"></div>
+      </details>
+    </div>
+    <div id="out"></div>
+    <div class="pager"><button class="btn" id="more" hidden>Show more</button></div>
+  </section>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+{% endblock %}
+{% block scripts %}<script src="{{ base }}/static/js/app.js?v={{ v }}"></script>{% endblock %}

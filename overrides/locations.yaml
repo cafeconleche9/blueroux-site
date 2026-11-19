@@ -1,0 +1,17 @@
+# Location overrides. These always win over the automatic location.
+#
+# Automatic: when BlueRoux's YouTube description starts with "<genre> from <City, State> (<year>)."
+# and names exactly one US state (and doesn't say "likely from"), that state is shown.
+# Everything else is only a suggestion, listed on /status/needs-location.html with lines to paste.
+#
+# Keys (one per line, no leading spaces):
+#   a Discogs release id      1234567: {state: ID}
+#   a Discogs artist id       89012: {state: UT}         (applies to all that artist's releases)
+#   a YouTube video id        "dQw4w9WgXcQ": {state: OR} (ALWAYS in double quotes: an id starting with "-" breaks the file otherwise)
+# Values:
+#   state: two-letter US code, or none to show no state (e.g. the automatic one is wrong)
+#   country: optional, overrides the Discogs country (e.g. {country: Canada})
+#
+# 1234567: {state: ID}
+# 7654321: {state: none}
+# "-abcDEF1234": {state: UT}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Status – {{ site.title }}{% endblock %}
+{% block robots %}<meta name="robots" content="noindex,nofollow">{% endblock %}
+{% block content %}
+<div class="prose">
+  <h1>Site status</h1>
+  <p class="muted">Maintenance view. Not linked from the navigation.</p>
+  <ul>
+    <li>{{ n_albums }} albums shown: {{ src_counts.collection }} in BlueRoux's collection · {{ src_counts.discogs }} on Discogs outside it · {{ src_counts.none }} with no Discogs page</li>
+    <li>{{ n_collection }} collection items · {{ n_videos }} YouTube videos</li>
+    <li>Discogs search for uploads outside the collection: {{ search_info.verified }} found (page lists the video) · {{ search_info.likely }} likely matches (artist and title agree) · {{ search_info.searched }} searched without a match (re-checked every 30 days) · {{ search_info.not_yet }} not searched yet</li>
+    <li>Locations: {{ loc_counts.description }} from BlueRoux's descriptions · {{ loc_counts.override }} from overrides · {{ loc_counts.none }} none</li>
+    <li><a href="{{ base }}/status/unmatched.html">{{ n_unmatched }} videos with no Discogs match</a> (fix in <code>overrides/matches.yaml</code>)</li>
+    <li><a href="{{ base }}/status/needs-location.html">{{ n_needs_loc }} albums without a location</a> (set in <code>overrides/locations.yaml</code>)</li>
+  </ul>
+  <h2>Warnings from this build</h2>
+  {% if warnings %}
+  <ul>{% for w in warnings %}<li><b>{{ w.source }}</b>: {{ w.message }}</li>{% endfor %}</ul>
+  {% else %}<p>None 🎉</p>{% endif %}
+</div>
+{% endblock %}

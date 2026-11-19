@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Needs location – {{ site.title }}{% endblock %}
+{% block robots %}<meta name="robots" content="noindex,nofollow">{% endblock %}
+{% block content %}
+<div class="prose wide">
+  <p><a href="{{ base }}/status/">← Status</a></p>
+  <h1>Albums with no location ({{ rows|length }})</h1>
+  <p class="muted">Most locations come automatically from BlueRoux's own "… from City, State (year)." description line.
+    These are the ones it couldn't settle (no line, a hedged "likely from…", a region, or more than one state).
+    Suggestions below are guesses and are <b>not</b> shown on the site.</p>
+  <p class="muted">To set one, paste its line into <code>overrides/locations.yaml</code> as-is.
+    Keys can be a Discogs release id, a Discogs artist id (applies to all that artist's releases), or a YouTube video id (in quotes).
+    To mark one as checked with no state, use <code>{state: none}</code>. Idaho, Utah and Oregon hits are listed first.</p>
+  {% for r in rows %}
+  <section class="report-item">
+    <h3>{{ r.album.artists|join(', ') }} – {{ r.album.title }} <span class="muted">({{ r.album.year or '?' }}{% if not r.album.nd %}, {{ r.album.country }}{% endif %})</span></h3>
+    <p>
+      {% if r.album.nd %}<span class="tag">No Discogs page</span>{% else %}<a href="{{ r.album.discogs }}">Discogs</a> · release id <code>{{ r.album.id }}</code>{% endif %}
+      · {% for v in r.album.videos %}<a href="{{ v|ytlink }}">YouTube</a>{% if not loop.last %}, {% endif %}{% endfor %}
+      {% if r.artist_ids %} · artist id(s) <code>{{ r.artist_ids|join(', ') }}</code>{% endif %}
+    </p>
+    {% if r.suggestions %}
+    <ul>
+    {% for s in r.suggestions %}
+      <li><b>{{ s.name }}</b> ({{ s.state }}, {{ s.confidence }} confidence)
+        <br><code>{{ r.key|yamlkey }}: {state: {{ s.state }}}</code>
+        {% if r.artist_ids|length == 1 %}<span class="muted">or for all of this artist's albums:</span> <code>{{ r.artist_ids[0] }}: {state: {{ s.state }}}</code>{% endif %}
+        <ul>{% for h in s.hits[:3] %}<li class="muted">{{ h.source }}: “{{ h.snippet }}”</li>{% endfor %}</ul>
+      </li>
+    {% endfor %}
+    </ul>
+    {% else %}<p class="muted">No suggestion found. <code>{{ r.key|yamlkey }}: {state: XX}</code> or <code>{{ r.key|yamlkey }}: {state: none}</code></p>{% endif %}
+    {% if r.sources %}
+    <details><summary>Source text</summary>
+      {% for label, text in r.sources.items() %}
+      <h4>{{ label }}</h4><pre>{{ text }}</pre>
+      {% endfor %}
+    </details>
+    {% endif %}
+  </section>
+  {% else %}<p>Every album has a location 🎉</p>{% endfor %}
+</div>
+{% endblock %}

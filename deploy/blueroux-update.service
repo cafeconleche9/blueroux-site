@@ -1,0 +1,10 @@
+[Unit]
+Description=Update the Blue Roux archive site (fetch data, rebuild, publish)
+OnFailure=blueroux-update-failed.service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=@REPO@/deploy/update.sh
+TimeoutStartSec=3h

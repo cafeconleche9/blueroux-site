@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Gunk In The Groove {{ show.date }} – {{ site.title }}{% endblock %}
+{% block content %}
+<div class="prose">
+  <p><a href="{{ base }}/radio/">← All shows</a></p>
+  <h1>Gunk In The Groove</h1>
+  <h2 class="muted">{{ nice_date }}</h2>
+
+  {% if show.mixcloud %}
+  <iframe class="mixcloud" title="Mixcloud player" width="100%" height="120" loading="lazy"
+    src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;light=0&amp;feed={{ show.mixcloud.key|urlencode }}"></iframe>
+  <p><a href="{{ show.mixcloud.url }}">Listen on Mixcloud ↗</a></p>
+  {% else %}
+  <p class="muted">The Mixcloud upload for this show isn't available (yet).</p>
+  {% endif %}
+
+  <h2>Playlist</h2>
+  {% if show.spinitron and show.spinitron.spins %}
+  <div class="table-wrap">
+  <table class="data">
+    <thead><tr><th>Time</th><th>Artist</th><th>Song</th><th>Release</th><th>Label</th><th>Year</th></tr></thead>
+    <tbody>
+    {% for sp in show.spinitron.spins %}
+      <tr><td>{{ sp.time }}</td><td>{{ sp.artist }}</td><td>{{ sp.song }}</td><td>{{ sp.release }}</td><td>{{ sp.label }}</td><td>{{ sp.year }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p><a href="{{ show.spinitron.url }}">View on Spinitron ↗</a>
+  {% for u in show.spinitron.other_urls %} · <a href="{{ u }}">Alternate playlist ↗</a>{% endfor %}</p>
+  {% else %}
+  <p class="muted">Couldn't load the tracklist. See this show's page on
+    <a href="{{ show.spinitron.url if show.spinitron else 'https://spinitron.com/Tropico/dj/198366/BlueRoux' }}">Spinitron ↗</a>.</p>
+  {% endif %}
+</div>
+{% endblock %}

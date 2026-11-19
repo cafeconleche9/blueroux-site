@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Radio – {{ site.title }}{% endblock %}
+{% block content %}
+<div class="prose">
+  <h1>Gunk In The Groove</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weekly on Tropico FM; every show is archived here.</p>
+  {% if shows %}
+  <ul class="show-list">
+    {% for s in shows %}
+    <li>
+      <a href="{{ base }}/radio/{{ s.date }}/"><b>{{ s.date }}</b></a>
+      <span class="muted">
+        {% if s.spinitron %}{{ s.spinitron.spins|length }} tracks{% else %}tracklist n/a{% endif %}
+        · {% if s.mixcloud %}Mixcloud ✓{% else %}no mix yet{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}<p class="muted">No shows yet.</p>{% endif %}
+</div>
+{% endblock %}
