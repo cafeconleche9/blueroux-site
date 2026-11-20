@@ -1,3 +1,7 @@
 {
- "keys": []
+ "keys": [
+  "discogs:DISCOGS_TOKEN not set; skipping Discogs search for uploads outside the collection",
+  "discogs:DISCOGS_TOKEN not set; unauthenticated (25 req/min) and no image URLs",
+  "youtube:YOUTUBE_API_KEY not set; using cached data"
+ ]
 }
