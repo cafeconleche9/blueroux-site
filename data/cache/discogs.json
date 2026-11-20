@@ -48662,11 +48662,12 @@
       "Album",
       "Limited Edition",
       "Numbered",
+      "Reissue",
       "Remastered"
      ],
      "name": "Vinyl",
      "qty": "1",
-     "text": "Pink, 180 Gram, Gatefold"
+     "text": "Pink, 180 Gram"
     }
    ],
    "release_id": "21128908"
@@ -51570,6 +51571,20 @@
     }
    ],
    "release_id": "39075884"
+  },
+  "2206450077": {
+   "date_added": "2026-11-20T04:44:52-08:00",
+   "folder_id": null,
+   "formats": [
+    {
+     "descriptions": [
+      "LP"
+     ],
+     "name": "Vinyl",
+     "qty": "1"
+    }
+   ],
+   "release_id": "8684484"
   },
   "222869037": {
    "date_added": "2017-04-03T21:54:59-07:00",
@@ -86565,7 +86580,9 @@
    "formats": [
     {
      "descriptions": [
-      "LP"
+      "LP",
+      "Album",
+      "Stereo"
      ],
      "name": "Vinyl",
      "qty": "1"
@@ -136136,6 +136153,45 @@
    "uri": "https://www.discogs.com/release/13576474-Alberto-Naranjo-Y-El-Trabuco-Imagen-Latina",
    "videos": [],
    "year": 2008
+  },
+  "13577608": {
+   "artists": [
+    {
+     "id": "134899",
+     "name": "Supreme"
+    }
+   ],
+   "country": "US",
+   "cover": "https://i.discogs.com/q-A7bv85cVFQ9K5imcq6orgDeGbhC-fVx2UXUEqSOIk/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTc3/NjA4LTE1NTY4MzQx/NTMtOTg4OC5qcGVn.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "EP",
+      "Enhanced",
+      "Test Pressing"
+     ],
+     "name": "CDr"
+    }
+   ],
+   "genres": [
+    "Hip Hop"
+   ],
+   "id": "13577608",
+   "labels": [
+    {
+     "catno": "none",
+     "id": "2044",
+     "name": "MP3.com"
+    }
+   ],
+   "notes": "",
+   "released": "",
+   "styles": [],
+   "thumb": "https://i.discogs.com/j-Rm-U8ukBaNj_pdp5XO4cm6DZNq7-2czZcz4An2GzI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTc3/NjA4LTE1NTY4MzQx/NTMtOTg4OC5qcGVn.jpeg",
+   "title": "Eloheem",
+   "uri": "https://www.discogs.com/release/13577608-Supreme-5-Eloheem",
+   "videos": [],
+   "year": 0
   },
   "13580576": {
    "artists": [
@@ -205309,6 +205365,52 @@
    "videos": [],
    "year": 0
   },
+  "2350071": {
+   "artists": [
+    {
+     "id": "334815",
+     "name": "Autopsy"
+    }
+   ],
+   "country": "UK",
+   "cover": "https://i.discogs.com/KTKvX8uMfwPQstPcAG4RIFIy8mechW5we69jznnMfmQ/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNTAw/NzEtMTI3OTcxNjc0/MS5qcGVn.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "12\"",
+      "33 ⅓ RPM",
+      "EP"
+     ],
+     "name": "Vinyl"
+    }
+   ],
+   "genres": [
+    "Electronic"
+   ],
+   "id": "2350071",
+   "labels": [
+    {
+     "catno": "AD 007",
+     "id": "78212",
+     "name": "Audio Damage"
+    }
+   ],
+   "notes": "",
+   "released": "2010-07-09",
+   "styles": [
+    "Hardcore"
+   ],
+   "thumb": "https://i.discogs.com/37Dcsya0YKVSQl-BVj_vSQ3Dx0BYfEzRljwtVawEaNc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNTAw/NzEtMTI3OTcxNjc0/MS5qcGVn.jpeg",
+   "title": "The Sickness EP",
+   "uri": "https://www.discogs.com/release/2350071-Autopsy-3-The-Sickness-EP",
+   "videos": [
+    "iixZCuJt1jQ",
+    "p3WAY6WiqyU",
+    "GuuBN2bLcK4",
+    "yygrE-Qd3k4"
+   ],
+   "year": 2010
+  },
   "2350423": {
    "artists": [
     {
@@ -226919,6 +227021,47 @@
     "roxSkUx2NHA"
    ],
    "year": 2005
+  },
+  "27651096": {
+   "artists": [
+    {
+     "id": "122129",
+     "name": "Tom Caruana"
+    }
+   ],
+   "country": "Europe",
+   "cover": "https://i.discogs.com/NohAs-eL_OBFLF7KfhKuVVGJ6YxOVr7hJq-xtB5wcj4/rs:fit/g:sm/q:90/h:541/w:540/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NjUx/MDk2LTE2ODkxODY0/NjEtMzc0NC5qcGVn.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "LP",
+      "Album"
+     ],
+     "name": "Vinyl"
+    }
+   ],
+   "genres": [
+    "Hip Hop"
+   ],
+   "id": "27651096",
+   "labels": [
+    {
+     "catno": "TC30",
+     "id": "89516",
+     "name": "Tea Sea Records"
+    }
+   ],
+   "notes": "Produced, mixed & mastered by Tom Caruana\nArtwork by Dan Lish\nAdditional design by Rob Crespo",
+   "released": "2023",
+   "styles": [],
+   "thumb": "https://i.discogs.com/3aO1-dFTlqfhHd-S-jy7tjG1kBUCMFe-wTSe9pvD39Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NjUx/MDk2LTE2ODkxODY0/NjEtMzc0NC5qcGVn.jpeg",
+   "title": "An Adventure To Pepperland Through Rhyme & Space (2023 Remastered Version)",
+   "uri": "https://www.discogs.com/release/27651096-Tom-Caruana-An-Adventure-To-Pepperland-Through-Rhyme-Space-2023-Remastered-Version",
+   "videos": [
+    "wJN52ihKiqY",
+    "t1MbZ9SoKZo"
+   ],
+   "year": 2023
   },
   "276524": {
    "artists": [
@@ -271184,6 +271327,47 @@
    "videos": [],
    "year": 2011
   },
+  "36643072": {
+   "artists": [
+    {
+     "id": "15371772",
+     "name": "Half Dizzy"
+    }
+   ],
+   "country": "US",
+   "cover": "https://i.discogs.com/gEHqey9txI1eeJOlIibt0QVe-5NBfvttGy_ts905QPo/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NjQz/MDcyLTE3NzIzODIy/MTMtMTMyNy5qcGVn.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "LP",
+      "Album"
+     ],
+     "name": "Vinyl"
+    }
+   ],
+   "genres": [
+    "Rock"
+   ],
+   "id": "36643072",
+   "labels": [
+    {
+     "catno": "PR-052LP",
+     "id": "3058594",
+     "name": "Punkerton Records"
+    }
+   ],
+   "notes": "",
+   "released": "2025",
+   "styles": [
+    "Punk",
+    "Pop Punk"
+   ],
+   "thumb": "https://i.discogs.com/yE4TH7acwmO3sENlfSlVWShMKN4DA8mvifz_yHuv-g8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NjQz/MDcyLTE3NzIzODIy/MTMtMTMyNy5qcGVn.jpeg",
+   "title": "Yard Sale",
+   "uri": "https://www.discogs.com/release/36643072-Half-Dizzy-Yard-Sale",
+   "videos": [],
+   "year": 2025
+  },
   "36654469": {
    "artists": [
     {
@@ -292620,6 +292804,45 @@
    "uri": "https://www.discogs.com/release/4333812-SMG-Waves-Of-Poison",
    "videos": [],
    "year": 2012
+  },
+  "4335776": {
+   "artists": [
+    {
+     "id": "555459",
+     "name": "Virgil Fox"
+    }
+   ],
+   "country": "US",
+   "cover": "https://i.discogs.com/8O_BJrRMbOW3OYxrQisD27N1NTMJdsvn_AQxUhPAX5Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMzU3/NzYtMTUyNTE0NDgw/OC0yOTcwLmpwZWc.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "LP"
+     ],
+     "name": "Vinyl"
+    }
+   ],
+   "genres": [
+    "Classical"
+   ],
+   "id": "4335776",
+   "labels": [
+    {
+     "catno": "S-36052",
+     "id": "7505",
+     "name": "Angel Records"
+    }
+   ],
+   "notes": "Performed on the Aeolian-Skinner Organ of the Riverside Church in New York City.",
+   "released": "1972",
+   "styles": [
+    "Organ"
+   ],
+   "thumb": "https://i.discogs.com/bxchzFMZ8XI6q7IanXRolu03R5WlQcbnkaR-GdbMiBc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMzU3/NzYtMTUyNTE0NDgw/OC0yOTcwLmpwZWc.jpeg",
+   "title": "Virgil Fox Plays The Classics",
+   "uri": "https://www.discogs.com/release/4335776-Virgil-Fox-Virgil-Fox-Plays-The-Classics",
+   "videos": [],
+   "year": 1972
   },
   "433619": {
    "artists": [
@@ -357314,6 +357537,45 @@
    ],
    "year": 1992
   },
+  "8684484": {
+   "artists": [
+    {
+     "id": "5064764",
+     "name": "Mr. Stress Blues Band"
+    }
+   ],
+   "country": "US",
+   "cover": "https://i.discogs.com/ts2oU9wWDaPhqB4Hd-r26EAYVzB20-scojgejIIrSGg/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2ODQ0/ODQtMTY0NTc0NDE5/Ny01NzM4LmpwZWc.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "LP"
+     ],
+     "name": "Vinyl"
+    }
+   ],
+   "genres": [
+    "Blues"
+   ],
+   "id": "8684484",
+   "labels": [
+    {
+     "catno": "ET 6969",
+     "id": "3908205",
+     "name": "ET Records"
+    }
+   ],
+   "notes": "",
+   "released": "1981",
+   "styles": [],
+   "thumb": "https://i.discogs.com/PiYXfJ_M8IGHND8K4_Qr61w62tsq2TS81vRLAKp7f5k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2ODQ0/ODQtMTY0NTc0NDE5/Ny01NzM4LmpwZWc.jpeg",
+   "title": "Mr. Stress Live at the Euclid Tavern",
+   "uri": "https://www.discogs.com/release/8684484-Mr-Stress-Blues-Band-Mr-Stress-Live-at-the-Euclid-Tavern",
+   "videos": [
+    "nxlRuv8aCYA"
+   ],
+   "year": 1981
+  },
   "868918": {
    "artists": [
     {
@@ -373524,6 +373786,42 @@
     }
    ],
    "date": "2026-11-18",
+   "release_id": null
+  },
+  "QuPmuypdwGE": {
+   "candidates": [
+    {
+     "format": "Vinyl, LP",
+     "id": "4335776",
+     "title": "Virgil Fox - Virgil Fox Plays The Classics",
+     "year": "1972"
+    },
+    {
+     "format": "CDr, EP, Enhanced",
+     "id": "13577608",
+     "title": "Supreme (5) - Eloheem",
+     "year": ""
+    },
+    {
+     "format": "Vinyl, 12\", 33 ⅓ RPM",
+     "id": "2350071",
+     "title": "Autopsy (3) - The Sickness EP",
+     "year": "2010"
+    },
+    {
+     "format": "Vinyl, LP, Album",
+     "id": "27651096",
+     "title": "Tom Caruana - An Adventure To Pepperland Through Rhyme & Space (2023 Remastered Version)",
+     "year": "2023"
+    },
+    {
+     "format": "Vinyl, LP, Album",
+     "id": "36643072",
+     "title": "Half Dizzy - Yard Sale",
+     "year": "2025"
+    }
+   ],
+   "date": "2026-11-20",
    "release_id": null
   },
   "QwcvFgq1f10": {
