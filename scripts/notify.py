@@ -22,7 +22,7 @@ def _post(content: str) -> None:
     try:
         requests.post(url, json={"content": content[:1900]}, timeout=15).raise_for_status()
     except requests.RequestException as e:  # alerting must never break the build
-        print(f"notify: failed to post to Discord: {e}")
+        print(f"notify: failed to post to Discord: {redact(str(e))}")  # HTTPError text includes the webhook URL
 
 
 def send_failure(message: str) -> None:

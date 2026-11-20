@@ -35,6 +35,15 @@ for f in "${files[@]}"; do
   grep -qE -- "$patterns" "$f" && report "$f contains something that looks like an API key or webhook URL"
 done
 
+# the built site isn't in git, but it's what GitHub Pages publishes
+if [[ -d dist ]]; then
+  echo "Checking the built site (dist/)…"
+  for v in "${values[@]}"; do
+    grep -rlF -- "$v" dist | while read -r f; do echo "  ✗ $f contains a value from .env"; done | grep . && fail=1
+  done
+  grep -rlE -- "$patterns" dist | while read -r f; do echo "  ✗ $f contains something that looks like an API key or webhook URL"; done | grep . && fail=1
+fi
+
 if [[ "${1:-}" == "--history" ]] && git rev-parse -q --verify HEAD >/dev/null; then
   echo "Checking every past commit…"
   for c in $(git rev-list --all); do

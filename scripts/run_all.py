@@ -4,7 +4,7 @@ workflow fails (GitHub emails; the workflow's failure step also pings Discord)."
 from __future__ import annotations
 
 import sys
-import traceback
+
 
 import build
 import fetch_discogs
@@ -12,14 +12,14 @@ import fetch_radio
 import fetch_youtube
 import match
 import notify
-from common import load_config, load_yaml, read_cache, warnings
+from common import load_config, load_yaml, print_exc, read_cache, warnings
 
 
 def safe(name, fn, fallback_cache):
     try:
         return fn()
     except Exception as e:
-        traceback.print_exc()
+        print_exc()
         warnings.add(name, f"fetch failed, using cached data: {type(e).__name__}: {e}")
         return read_cache(fallback_cache)
 
@@ -35,7 +35,7 @@ def search_outside_collection(yt: dict, dc: dict) -> None:
         fetch_discogs.search_unmatched(yt, dc, [u["video"]["id"] for u in m["unmatched"]],
                                        budget=int(cfg["discogs"].get("search_budget", 2000)))
     except Exception as e:
-        traceback.print_exc()
+        print_exc()
         warnings.add("discogs", f"Discogs search for uploads outside the collection failed: {type(e).__name__}: {e}")
 
 
@@ -51,7 +51,7 @@ def fetch_profiles_for_uploaded(yt: dict, dc: dict) -> None:
         print(f"profiles: {len(uploaded)} uploaded releases")
         fetch_discogs.fetch_profiles(dc, uploaded)   # updates dc in place
     except Exception as e:
-        traceback.print_exc()
+        print_exc()
         warnings.add("discogs", f"artist/label profiles fetch failed (location suggestions may be thin): {type(e).__name__}: {e}")
 
 
@@ -67,7 +67,7 @@ def main() -> int:
     try:
         build.run(yt, dc, radio, warnings.items)
     except Exception as e:
-        traceback.print_exc()
+        print_exc()
         notify.send_failure(f"Build crashed: {type(e).__name__}: {e}")
         return 1
     notify.send_warnings(warnings.items)

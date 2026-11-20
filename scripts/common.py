@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import time
 from pathlib import Path
 
@@ -57,6 +58,20 @@ def redact(text: str) -> str:
         if val and len(val) >= 4:
             text = text.replace(val, "***")
     return text
+
+
+def print_exc() -> None:
+    """traceback.print_exc(), but with secrets scrubbed (tracebacks end up in journalctl / Actions logs)."""
+    import traceback
+    print(redact(traceback.format_exc()), file=sys.stderr, end="")
+
+
+def _redacting_excepthook(exc_type, exc, tb):
+    import traceback
+    print(redact("".join(traceback.format_exception(exc_type, exc, tb))), file=sys.stderr, end="")
+
+
+sys.excepthook = _redacting_excepthook   # crashes nobody caught get scrubbed too
 
 
 class Warnings:
