@@ -190,7 +190,14 @@ def build_albums(yt: dict, dc: dict, matches: dict, overrides_loc: dict) -> tupl
     return albums, {"needs_location": needs_location}
 
 
-def load_pages() -> list[dict]:
+def render_md(text: str, base: str) -> str:
+    """Markdown → HTML. Links and images written from the site root ("/images/x.jpg", "/about/")
+    get the site's base path added, so they work both locally and on GitHub Pages."""
+    html = markdown.markdown(text, extensions=["extra", "sane_lists", "toc"])
+    return re.sub(r'(src|href)="/(?!/)', lambda m: f'{m.group(1)}="{base}/', html)
+
+
+def load_pages(base: str) -> list[dict]:
     pages = []
     d = ROOT / "pages"
     for p in sorted(d.glob("*.md")):
@@ -200,10 +207,20 @@ def load_pages() -> list[dict]:
             "title": post.get("title", p.stem.replace("-", " ").title()),
             "order": post.get("nav_order", 100),
             "nav": post.get("nav", True),
-            "html": markdown.markdown(post.content, extensions=["extra", "sane_lists", "toc"]),
+            "html": render_md(post.content, base),
         })
     pages.sort(key=lambda p: (p["order"], p["title"]))
     return pages
+
+
+def load_radio_notes(base: str) -> dict:
+    """radio-notes/intro.md → top of the radio page; radio-notes/YYYY-MM-DD.md → that show's page."""
+    notes = {}
+    d = ROOT / "radio-notes"
+    for p in sorted(d.glob("*.md")) if d.exists() else []:
+        if p.stem == "intro" or re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.stem):
+            notes[p.stem] = render_md(frontmatter.load(p).content, base)
+    return notes
 
 
 def run(yt: dict, dc: dict, radio: dict, warn_items: list[dict]) -> None:
@@ -216,13 +233,16 @@ def run(yt: dict, dc: dict, radio: dict, warn_items: list[dict]) -> None:
 
     matches = match.run(yt, dc, ov_matches, cfg["matching"], dc.get("search"))
     albums, reports = build_albums(yt, dc, matches, ov_loc)
-    pages = load_pages()
+    pages = load_pages(base)
+    notes = load_radio_notes(base)
     shows = sorted(radio["shows"].values(), key=lambda s: s["date"], reverse=True)
 
     if DIST.exists():
         shutil.rmtree(DIST)
     DIST.mkdir(parents=True)
     shutil.copytree(ROOT / "static", DIST / "static")
+    if (ROOT / "images").exists():            # pictures for pages and radio notes
+        shutil.copytree(ROOT / "images", DIST / "images")
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]))
     env.filters["ytlink"] = lambda v: f"https://www.youtube.com/watch?v={v}"
@@ -251,9 +271,9 @@ def run(yt: dict, dc: dict, radio: dict, warn_items: list[dict]) -> None:
          "updated": updated}, ensure_ascii=False, separators=(",", ":")))
 
     write("index.html", "index.html", count=len(albums))
-    write("radio/index.html", "radio_index.html", shows=shows)
+    write("radio/index.html", "radio_index.html", shows=shows, intro=notes.get("intro"))
     for s in shows:
-        write(f"radio/{s['date']}/index.html", "show.html", show=s,
+        write(f"radio/{s['date']}/index.html", "show.html", show=s, note=notes.get(s["date"]),
               nice_date=datetime.fromisoformat(s["date"]).strftime("%A, %B %-d, %Y"))
     for p in pages:
         write(f"{p['slug']}/index.html", "page.html", page=p)

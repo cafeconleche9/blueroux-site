@@ -168,3 +168,6 @@ html[data-theme="ereader"] table.data td.cover img { filter: grayscale(1); }
 }
 @media (prefers-reduced-motion: reduce) { .filters { transition: none; } }
 html[data-theme="ereader"] * { animation: none !important; transition: none !important; }
+
+/* pictures in pages and radio notes */
+.prose img { max-width: 100%; height: auto; }
