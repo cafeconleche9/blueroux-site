@@ -3,6 +3,5 @@ dist/
 __pycache__/
 *.pyc
 .env
-EDITING.md
 # personal planning notes
 notes/
