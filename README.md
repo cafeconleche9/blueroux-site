@@ -51,6 +51,8 @@ home-network update changed it too), run `git checkout -- data/cache` and pull a
 straight in GitHub's web editor; the site rebuilds on every push.
 
 ## Day to day
+New to git, or writing pages, radio blurbs or adding pictures? See **[EDITING.md](EDITING.md)**.
+
 | I want to… | Do this |
 |---|---|
 | Add a page | Drop `pages/something.md` in. Optional front-matter: `title`, `nav_order`, `nav: false`. |
