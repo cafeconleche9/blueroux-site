@@ -51586,6 +51586,20 @@
    ],
    "release_id": "8684484"
   },
+  "2207014881": {
+   "date_added": "2026-11-21T15:31:03-08:00",
+   "folder_id": null,
+   "formats": [
+    {
+     "descriptions": [
+      "LP"
+     ],
+     "name": "Vinyl",
+     "qty": "1"
+    }
+   ],
+   "release_id": "3920895"
+  },
   "222869037": {
    "date_added": "2017-04-03T21:54:59-07:00",
    "folder_id": null,
@@ -285215,6 +285229,49 @@
     "lBXD4rxHabU",
     "EYMB646J8Xk"
    ],
+   "year": 0
+  },
+  "3920895": {
+   "artists": [
+    {
+     "id": "739289",
+     "name": "Frank Hatchett"
+    }
+   ],
+   "country": "US",
+   "cover": "https://i.discogs.com/NIgYr0k1XsvMsHb5CwY59gizFJUPymQykGIqbtE8rYo/rs:fit/g:sm/q:90/h:544/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MjA4/OTUtMTM2NTgxMTM5/My0zODY4LmpwZWc.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "LP"
+     ],
+     "name": "Vinyl"
+    }
+   ],
+   "genres": [
+    "Jazz",
+    "Funk / Soul",
+    "Folk, World, & Country"
+   ],
+   "id": "3920895",
+   "labels": [
+    {
+     "catno": "SLP 1199",
+     "id": "61972",
+     "name": "Statler Records"
+    }
+   ],
+   "notes": "",
+   "released": "",
+   "styles": [
+    "African",
+    "Afro-Cuban Jazz",
+    "Latin Jazz"
+   ],
+   "thumb": "https://i.discogs.com/0Ikp95KhOHhG2uHWjlB54010ZzpiKayoBEd0kA-Izks/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MjA4/OTUtMTM2NTgxMTM5/My0zODY4LmpwZWc.jpeg",
+   "title": "Afro-Cuban Jazz (Ethnic-Fever)",
+   "uri": "https://www.discogs.com/release/3920895-Frank-Hatchett-Afro-Cuban-Jazz-Ethnic-Fever",
+   "videos": [],
    "year": 0
   },
   "3922813": {
