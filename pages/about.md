@@ -3,14 +3,10 @@ title: About
 nav_order: 10
 ---
 
-# About
+# About BlueRoux
+Trying my hardest to preserve scarce and forgotten music from every corner of my collection.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+I don't own the rights to any music on my YouTube channel, and I make absolutely no money from those videos. Any ads you may see on my videos are run by YouTube, never by me. If you have an issue with your music being posted here, please reach out to me at blueroux99@gmail.com 
 
-## Lorem ipsum
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-- Excepteur sint occaecat cupidatat
-- Non proident, sunt in culpa
-- Qui officia deserunt mollit anim
+# About the Website
+The purpose of this website is to make it easier to browse through the music that I upload to YouTube and Discogs. Information from my video descriptions and Discogs are pulled and linked together, so they can be sorted and searched on this website. The way that the data is pulled means that there may occasional mistakes, especially when mutiple artists or albums share the same same name. 
