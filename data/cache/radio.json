@@ -615,7 +615,14 @@
   },
   "2026-11-22": {
    "date": "2026-11-22",
-   "mixcloud": null,
+   "mixcloud": {
+    "created": "2026-11-22T19:10:15Z",
+    "key": "/tropicofm/gunk-in-the-groove-112226/",
+    "name": "Gunk In The Groove 11.22.26",
+    "picture": "https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/a/5/7/e/283e-23b0-4bd2-845b-bc60376de35f",
+    "tags": [],
+    "url": "https://www.mixcloud.com/tropicofm/gunk-in-the-groove-112226/"
+   },
    "spinitron": {
     "other_urls": [],
     "spins": [
@@ -626,6 +633,214 @@
       "song": "Sky Dive",
       "time": "10:01 AM",
       "year": "1997"
+     },
+     {
+      "artist": "Urszula Dudziak",
+      "label": "Arista/Legacy",
+      "release": "Urszula Dudziak",
+      "song": "Butterfly",
+      "time": "10:11 AM",
+      "year": "1975"
+     },
+     {
+      "artist": "Bill Summers",
+      "label": "Craft Recordings",
+      "release": "Feel The Heat",
+      "song": "Check It Out",
+      "time": "10:13 AM",
+      "year": "2023"
+     },
+     {
+      "artist": "Seawind",
+      "label": "Motor",
+      "release": "Mojo Club Vol.6 (Summer In The City)",
+      "song": "Free",
+      "time": "10:19 AM",
+      "year": "1997"
+     },
+     {
+      "artist": "Phil Keaggy",
+      "label": "Word",
+      "release": "The Master & the Musician",
+      "song": "Follow Me Up",
+      "time": "10:23 AM",
+      "year": "2001"
+     },
+     {
+      "artist": "Steve & Maria Gardner",
+      "label": "",
+      "release": "",
+      "song": "Amazing Grace",
+      "time": "10:34 AM",
+      "year": ""
+     },
+     {
+      "artist": "The Cross Family",
+      "label": "",
+      "release": "",
+      "song": "Swing Low Sweet Chariot",
+      "time": "10:37 AM",
+      "year": ""
+     },
+     {
+      "artist": "Good News Revival",
+      "label": "",
+      "release": "",
+      "song": "Woman At The Well",
+      "time": "10:39 AM",
+      "year": ""
+     },
+     {
+      "artist": "Radiance",
+      "label": "",
+      "release": "",
+      "song": "Nothing Can Separate Us",
+      "time": "10:43 AM",
+      "year": ""
+     },
+     {
+      "artist": "The Harmonizing Four",
+      "label": "",
+      "release": "",
+      "song": "Well Done",
+      "time": "10:47 AM",
+      "year": ""
+     },
+     {
+      "artist": "Reverend Jerry Williams",
+      "label": "",
+      "release": "",
+      "song": "I'm Glad That The Lord Let Me Live",
+      "time": "10:49 AM",
+      "year": ""
+     },
+     {
+      "artist": "Canned Heat",
+      "label": "Capitol Records",
+      "release": "Boogie With Canned Heat",
+      "song": "Whiskey Headed Woman No. 2",
+      "time": "10:56 AM",
+      "year": "2008"
+     },
+     {
+      "artist": "Mr. Stress Blues Band",
+      "label": "",
+      "release": "",
+      "song": "Good Thing",
+      "time": "11:01 AM",
+      "year": ""
+     },
+     {
+      "artist": "Genya Ravan",
+      "label": "",
+      "release": "",
+      "song": "Swan Blues",
+      "time": "11:03 AM",
+      "year": ""
+     },
+     {
+      "artist": "Blues Image",
+      "label": "Rhino Atlantic",
+      "release": "Ride Captain Ride / Pay My Dues [Digital 45]",
+      "song": "Pay My Dues",
+      "time": "11:05 AM",
+      "year": "2009"
+     },
+     {
+      "artist": "The Serfs",
+      "label": "",
+      "release": "",
+      "song": "You've Been Talking About Me Baby",
+      "time": "11:10 AM",
+      "year": ""
+     },
+     {
+      "artist": "Isaac Hayes",
+      "label": "Stax",
+      "release": "Tough Guys",
+      "song": "Run Faye Run",
+      "time": "11:17 AM",
+      "year": "2016"
+     },
+     {
+      "artist": "Henry \"Buzz\" Glass & Rosemary Hallum",
+      "label": "",
+      "release": "",
+      "song": "Stick Jive #2",
+      "time": "11:22 AM",
+      "year": ""
+     },
+     {
+      "artist": "Frank Hatchett",
+      "label": "",
+      "release": "",
+      "song": "Stand Tall",
+      "time": "11:26 AM",
+      "year": ""
+     },
+     {
+      "artist": "Teresa Trull",
+      "label": "",
+      "release": "",
+      "song": "Musicians",
+      "time": "11:26 AM",
+      "year": ""
+     },
+     {
+      "artist": "Linda Bernabei",
+      "label": "",
+      "release": "",
+      "song": "New Day For You",
+      "time": "11:31 AM",
+      "year": ""
+     },
+     {
+      "artist": "Upepo",
+      "label": "",
+      "release": "",
+      "song": "Shockwaves",
+      "time": "11:33 AM",
+      "year": ""
+     },
+     {
+      "artist": "Niteflyte",
+      "label": "Legacy Recordings",
+      "release": "Niteflyte",
+      "song": "No Two Alike",
+      "time": "11:37 AM",
+      "year": "1995"
+     },
+     {
+      "artist": "Scone Cash Players",
+      "label": "MANGO HILL RECORDS",
+      "release": "Old Faithful",
+      "song": "Old Faithful",
+      "time": "11:47 AM",
+      "year": "2020"
+     },
+     {
+      "artist": "El Michels Affair",
+      "label": "Big Crown Records",
+      "release": "Mágica",
+      "song": "Mágica",
+      "time": "11:49 AM",
+      "year": "2025"
+     },
+     {
+      "artist": "Guts",
+      "label": "Heavenly Sweetness",
+      "release": "Paradise for All (Deluxe Edition)",
+      "song": "Freedom",
+      "time": "11:52 AM",
+      "year": "2012"
+     },
+     {
+      "artist": "Quantic",
+      "label": "Tru Thoughts",
+      "release": "Apricot Morning",
+      "song": "Transatlantic",
+      "time": "11:56 AM",
+      "year": "2002"
      }
     ],
     "url": "https://spinitron.com/Tropico/pl/23383377/Gunk-in-the-Groove"

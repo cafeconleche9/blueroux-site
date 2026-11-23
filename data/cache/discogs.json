@@ -6428,7 +6428,8 @@
       "45 RPM"
      ],
      "name": "Vinyl",
-     "qty": "1"
+     "qty": "1",
+     "text": "Translucent Gold"
     }
    ],
    "release_id": "677365"
@@ -17188,11 +17189,14 @@
     {
      "descriptions": [
       "7\"",
-      "Stereo",
-      "Single"
+      "45 RPM",
+      "Single",
+      "Styrene",
+      "Stereo"
      ],
      "name": "Vinyl",
-     "qty": "1"
+     "qty": "1",
+     "text": "Terre Haute Pressing"
     }
    ],
    "release_id": "1461332"
@@ -375549,6 +375553,18 @@
     }
    ],
    "date": "2026-11-18",
+   "release_id": null
+  },
+  "cXWtDAI5ADQ": {
+   "candidates": [
+    {
+     "format": "Vinyl, LP, Album",
+     "id": "10076280",
+     "title": "Various - Just For The Record - Sessions '87 - MiraCosta Community College",
+     "year": "1987"
+    }
+   ],
+   "date": "2026-11-23",
    "release_id": null
   },
   "cYvW8Cc-fFM": {
