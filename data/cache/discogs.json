@@ -30386,7 +30386,8 @@
       "Album"
      ],
      "name": "CD",
-     "qty": "1"
+     "qty": "1",
+     "text": "Gatefold, Digisleeve"
     }
    ],
    "release_id": "1903002"
@@ -55453,7 +55454,7 @@
      ],
      "name": "Cassette",
      "qty": "1",
-     "text": "Yellow Shell"
+     "text": "Yellow"
     }
    ],
    "release_id": "5871623"
