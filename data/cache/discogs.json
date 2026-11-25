@@ -51170,7 +51170,8 @@
      "descriptions": [
       "LP",
       "Album",
-      "Reissue"
+      "Reissue",
+      "Stereo"
      ],
      "name": "Vinyl",
      "qty": "1"
@@ -51604,6 +51605,22 @@
     }
    ],
    "release_id": "3920895"
+  },
+  "2208042655": {
+   "date_added": "2026-11-24T14:10:38-08:00",
+   "folder_id": null,
+   "formats": [
+    {
+     "descriptions": [
+      "LP",
+      "Album",
+      "Stereo"
+     ],
+     "name": "Vinyl",
+     "qty": "1"
+    }
+   ],
+   "release_id": "36032611"
   },
   "222869037": {
    "date_added": "2017-04-03T21:54:59-07:00",
@@ -267872,6 +267889,47 @@
     "BSO5jhnnboI"
    ],
    "year": 1984
+  },
+  "36032611": {
+   "artists": [
+    {
+     "id": "17096101",
+     "name": "Stan And Judy Rule"
+    }
+   ],
+   "country": "US",
+   "cover": "https://i.discogs.com/K6c9UoqvF9ERYbTAPjVeyZrAaPHaZChQ-afz-g0NniY/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MDMy/NjExLTE3NjY5MzY4/MjEtOTYxMS5qcGVn.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "LP",
+      "Album",
+      "Stereo"
+     ],
+     "name": "Vinyl"
+    }
+   ],
+   "genres": [
+    "Folk, World, & Country"
+   ],
+   "id": "36032611",
+   "labels": [
+    {
+     "catno": "LTD-4003",
+     "id": "781463",
+     "name": "LTD Productions"
+    }
+   ],
+   "notes": "",
+   "released": "",
+   "styles": [
+    "Gospel"
+   ],
+   "thumb": "https://i.discogs.com/1hRtDYN2OUlkiaAiZceYGjo_SXL1HAgtBDa7Zay1LTQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MDMy/NjExLTE3NjY5MzY4/MjEtOTYxMS5qcGVn.jpeg",
+   "title": "Jesus Is The Answer",
+   "uri": "https://www.discogs.com/release/36032611-Stan-And-Judy-Rule-Jesus-Is-The-Answer",
+   "videos": [],
+   "year": 0
   },
   "36034648": {
    "artists": [
