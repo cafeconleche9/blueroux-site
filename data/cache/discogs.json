@@ -2896,6 +2896,10 @@
    "name": "Meir Sherman",
    "profile": ""
   },
+  "3445304": {
+   "name": "Voices Triumphant",
+   "profile": ""
+  },
   "3451546": {
    "name": "Redvette",
    "profile": "Redvette is a hard rock band from Redwood City, California, USA, that was active in the early 80s."
@@ -3314,6 +3318,10 @@
   },
   "4245952": {
    "name": "Terry Couch",
+   "profile": ""
+  },
+  "4251759": {
+   "name": "Johnny Cook (2)",
    "profile": ""
   },
   "4258715": {
@@ -51622,6 +51630,20 @@
    ],
    "release_id": "36032611"
   },
+  "2208387924": {
+   "date_added": "2026-11-25T15:53:26-08:00",
+   "folder_id": null,
+   "formats": [
+    {
+     "descriptions": [
+      "Album"
+     ],
+     "name": "CD",
+     "qty": "1"
+    }
+   ],
+   "release_id": "39151167"
+  },
   "222869037": {
    "date_added": "2017-04-03T21:54:59-07:00",
    "folder_id": null,
@@ -95171,6 +95193,10 @@
    "name": "Listen (2)",
    "profile": "1950s pop label from Seattle, Washington."
   },
+  "232718": {
+   "name": "Calvary Records",
+   "profile": "1970s-2000s religious label from Nashville, Tennessee."
+  },
   "2338285": {
    "name": "Manic Obsessive Recordings",
    "profile": ""
@@ -97538,6 +97564,10 @@
   "479437": {
    "name": "Pure Joy Records",
    "profile": "Record label active in mid to late 1970s.\r\nAssociated with producer, engineer Buddy King (2).\r\n\r\nAssociated with Pure Joy Music and Pure Joy Productions."
+  },
+  "4798005": {
+   "name": "Not On Label (Switch Hitter (3) Self-released)",
+   "profile": ""
   },
   "488293": {
    "name": "San Luis Records",
@@ -285053,6 +285083,92 @@
    ],
    "year": 1986
   },
+  "39151167": {
+   "artists": [
+    {
+     "id": "15417786",
+     "name": "Switch Hitter"
+    }
+   ],
+   "country": "US",
+   "cover": "https://i.discogs.com/EPcYKPL8JgvRJlpvlcfEYSRsLtDuX7W3aGFdZiVwo4E/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MTUx/MTY3LTE3OTU2NDg2/NjYtODYzNS5qcGVn.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "Album"
+     ],
+     "name": "CD"
+    }
+   ],
+   "genres": [
+    "Rock"
+   ],
+   "id": "39151167",
+   "labels": [
+    {
+     "catno": "none",
+     "id": "4798005",
+     "name": "Not On Label (Switch Hitter (3) Self-released)"
+    }
+   ],
+   "notes": "",
+   "released": "2005",
+   "styles": [
+    "Punk",
+    "Ska"
+   ],
+   "thumb": "https://i.discogs.com/zHOyPzSz6DaWfBCTl4obmLiYtikTyXJWL4hPhsC2fGM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MTUx/MTY3LTE3OTU2NDg2/NjYtODYzNS5qcGVn.jpeg",
+   "title": "...And Then There Were Three",
+   "uri": "https://www.discogs.com/release/39151167-Switch-Hitter-3-And-Then-There-Were-Three",
+   "videos": [
+    "0tQdI16koaw"
+   ],
+   "year": 2005
+  },
+  "39151347": {
+   "artists": [
+    {
+     "id": "4251759",
+     "name": "Johnny Cook"
+    },
+    {
+     "id": "3445304",
+     "name": "Voices Triumphant"
+    }
+   ],
+   "country": "US",
+   "cover": "https://i.discogs.com/LO6BNM7VZQj5THYWh1OwE6-5R9nq7zPqyYTdE0KDcAY/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MTUx/MzQ3LTE3OTU2NTE0/NDgtNzcwMC5qcGVn.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "Album",
+      "Reissue"
+     ],
+     "name": "CDr"
+    }
+   ],
+   "genres": [
+    "Folk, World, & Country"
+   ],
+   "id": "39151347",
+   "labels": [
+    {
+     "catno": "STAV5137",
+     "id": "232718",
+     "name": "Calvary Records"
+    }
+   ],
+   "notes": "",
+   "released": "2004",
+   "styles": [
+    "Gospel"
+   ],
+   "thumb": "https://i.discogs.com/8NR2AKaQl36pO8_9xT9XZvtkJbeuwpFuxYmzFlkC_tg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MTUx/MzQ3LTE3OTU2NTE0/NDgtNzcwMC5qcGVn.jpeg",
+   "title": "Unforgettable",
+   "uri": "https://www.discogs.com/release/39151347-Johnny-Cook-2-And-The-Voices-Triumphant-Unforgettable",
+   "videos": [],
+   "year": 2004
+  },
   "391602": {
    "artists": [
     {
@@ -340601,6 +340717,50 @@
    "videos": [],
    "year": 1974
   },
+  "7283501": {
+   "artists": [
+    {
+     "id": "4251759",
+     "name": "Johnny Cook"
+    },
+    {
+     "id": "3445304",
+     "name": "Voices Triumphant"
+    }
+   ],
+   "country": "US",
+   "cover": "https://i.discogs.com/s6WWoIM0mnuFbfAUH2nJ8AKmuEOlIrgh86xwp-bcdNk/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODM1/MDEtMTUwNDMwNTg2/Mi04MjI2LmpwZWc.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "LP",
+      "Promo"
+     ],
+     "name": "Vinyl"
+    }
+   ],
+   "genres": [
+    "Folk, World, & Country"
+   ],
+   "id": "7283501",
+   "labels": [
+    {
+     "catno": "STAV5137",
+     "id": "232718",
+     "name": "Calvary Records"
+    }
+   ],
+   "notes": "Promotional release in red generic sleeve.",
+   "released": "",
+   "styles": [
+    "Gospel"
+   ],
+   "thumb": "https://i.discogs.com/toO8R3naY05DF8BNF8Src9FBF3guSa9tqabIKTjNeMk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODM1/MDEtMTUwNDMwNTg2/Mi04MjI2LmpwZWc.jpeg",
+   "title": "Unforgettable",
+   "uri": "https://www.discogs.com/release/7283501-Johnny-Cook-2-And-The-Voices-Triumphant-Unforgettable",
+   "videos": [],
+   "year": 0
+  },
   "7283516": {
    "artists": [
     {
@@ -376945,6 +377105,24 @@
     }
    ],
    "date": "2026-11-18",
+   "release_id": null
+  },
+  "mkVnbjbR8ug": {
+   "candidates": [
+    {
+     "format": "CDr, Album, Reissue",
+     "id": "39151347",
+     "title": "Johnny Cook (2) And The Voices Triumphant* - Unforgettable",
+     "year": "2004"
+    },
+    {
+     "format": "Vinyl, LP, Promo",
+     "id": "7283501",
+     "title": "Johnny Cook (2) And The Voices Triumphant* - Unforgettable",
+     "year": ""
+    }
+   ],
+   "date": "2026-11-26",
    "release_id": null
   },
   "mkz3uyetK1k": {
