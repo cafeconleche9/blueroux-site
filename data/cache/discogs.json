@@ -51661,6 +51661,7 @@
       "LP",
       "Album",
       "Record Store Day",
+      "Limited Edition",
       "Reissue"
      ],
      "name": "Vinyl",
@@ -51669,6 +51670,22 @@
     }
    ],
    "release_id": "39040406"
+  },
+  "2209062978": {
+   "date_added": "2026-11-27T15:37:08-08:00",
+   "folder_id": null,
+   "formats": [
+    {
+     "descriptions": [
+      "LP",
+      "Album"
+     ],
+     "name": "Vinyl",
+     "qty": "1",
+     "text": "Gatefold"
+    }
+   ],
+   "release_id": "405200"
   },
   "222869037": {
    "date_added": "2017-04-03T21:54:59-07:00",
@@ -287963,6 +287980,53 @@
     "gi7UdS2zbno"
    ],
    "year": 1983
+  },
+  "405200": {
+   "artists": [
+    {
+     "id": "55745",
+     "name": "Freddie Hubbard"
+    }
+   ],
+   "country": "US",
+   "cover": "https://i.discogs.com/D15kdd3QVMKqtUG9mSngTb19v8Q_pYub9t-o7Xv_fNU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNTIw/MC0xMzU2MzMxNjIw/LTI1ODMuanBlZw.jpeg",
+   "formats": [
+    {
+     "descriptions": [
+      "LP",
+      "Album"
+     ],
+     "name": "Vinyl"
+    }
+   ],
+   "genres": [
+    "Jazz"
+   ],
+   "id": "405200",
+   "labels": [
+    {
+     "catno": "CTI 6007",
+     "id": "11717",
+     "name": "CTI Records"
+    }
+   ],
+   "notes": "Recorded at Van Gelder Studios\nRecorded November 16, 1970\n\nHerbie Hancock appears through the courtesy of Warner Bros. Records.\nJack DeJohnette appears through the courtesy of Milestone Records.\n\nPublishing Credits:\nTrack A: Hubtones Music/BMI\nTrack B1: Nodlew Music/BMI\nTrack B2: Burke & Van Heusen Inc./ASCAP",
+   "released": "1970-12-00",
+   "styles": [
+    "Post Bop",
+    "Soul-Jazz",
+    "Jazz-Funk"
+   ],
+   "thumb": "https://i.discogs.com/dWRuJKG7osghC1fK47vbO0258OPPMhRoSaysA-drEqI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNTIw/MC0xMzU2MzMxNjIw/LTI1ODMuanBlZw.jpeg",
+   "title": "Straight Life",
+   "uri": "https://www.discogs.com/release/405200-Freddie-Hubbard-Straight-Life",
+   "videos": [
+    "a4xwNHUyz1Q",
+    "R2fjaP7DWQg",
+    "jbcL29NJCNU",
+    "k5CNYsmAJwI"
+   ],
+   "year": 1970
   },
   "4056549": {
    "artists": [
